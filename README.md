@@ -18,8 +18,6 @@ prescriptionRecog/
 ├── API.py                 # Real-time camera with API integration
 ├── Camera.py              # Simple camera-based detection
 ├── Model.py               # Standalone prediction module
-├── convert_to_onnx.py     # PyTorch to ONNX conversion
-├── onnx_pth.py           # Model validation script
 ├── scripts/
 │   ├── train.py          # Model training script
 │   └── inference.py      # Command-line inference
@@ -137,33 +135,5 @@ dataset/
 ## API Integration
 
 The system can integrate with external OCR APIs:
-- **Endpoint:** `https://test.checkrx.com/api/v3/vision/`
 - **Format:** Base64 encoded images
 - **Threshold:** Only sends images with OCR confidence > 65%
-
-## Model Conversion
-
-Convert PyTorch models to ONNX for deployment:
-```bash
-python convert_to_onnx.py
-python onnx_pth.py  # Validate conversion
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- MobileNetV2 architecture from Google
-- Tesseract OCR engine
-- PyTorch and TorchVision
-- OpenCV for computer vision tasks
