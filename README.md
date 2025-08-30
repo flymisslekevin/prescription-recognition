@@ -20,7 +20,6 @@ prescriptionRecog/
 ├── Model.py               # Standalone prediction module
 ├── scripts/
 │   ├── train.py          # Model training script
-│   └── inference.py      # Command-line inference
 ├── dataset/              # Training/validation data
 │   ├── train/
 │   │   ├── labelT/       # Images with prescription labels
